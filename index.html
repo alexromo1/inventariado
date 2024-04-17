@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container2">
+        <h2>Verificar Empleado</h2>
+        <form action="inicio.php" method="POST">
+            <div class="input-wrapper" id="input-wrapper">
+                <label for="num_doc">Tipo de empleado:</label>
+                <input type="text" id="num_doc" name="num_doc"  class="num_doc" placeholder="Ingrese su número de empleado">
+                <span class="icon">✏️</span>
+            </div>
+            <div class="input-wrapper" id="input-wrapper" >
+                <label for="sede">Sede:</label> <br>
+                <select id="sede" name="sede" class="num_doc" required>
+                    <option value="" hidden>Selecciona una sede</option>
+                    <option value="1">Guaimaral</option>
+                    <option value="2">Niza</option>
+                    <option value="3">Sexta</option>
+                    <option value="4">Patios</option>
+                    <option value="5">Zulia</option>
+                    <option value="6">Trapiches</option>
+                </select>
+                <span class="icon">🏢</span>
+            </div> <br>
+            <div class="input-wrapper" id="input-wrapper" >
+                <label for="contra">Contraseña:</label> <br>
+                <input type="password" id="contra" class="num_doc" name="contra" required placeholder="Ingrese su contraseña">
+                <span class="icon" onclick="mostrarPassword()">🔒</span></button>
+            </div> <br>
+            <div class="button-wrapper">
+                <input type="submit" name="submit" value="Verificar"> 
+            </div>
+        </form>
+    </div>
+</body>
+</html>
